@@ -19,7 +19,7 @@ enum class localerror {
 };
 
 using namespace std;
-#if __cplusplus < 202302L
+#if defined(USE_SRESULT)
 using namespace sresult;
 #endif
 
