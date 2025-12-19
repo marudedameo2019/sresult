@@ -10,9 +10,9 @@ cmakeを使います。
 VS2022のシェル実行環境(典型的には "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\VsDevCmd.bat" )から
 
 ```shell-session
-C:\Users\user\setlocale_examples>cmake -B 任意のビルド結果格納用ディレクトリ
+C:\Users\user\sresult>cmake -B 任意のビルド結果格納用ディレクトリ
 ...
-C:\Users\user\setlocale_examples>cmake --build 任意のビルド結果格納用ディレクトリ --verbose --config Release
+C:\Users\user\sresult>cmake --build 任意のビルド結果格納用ディレクトリ --verbose --config Release
 ...
 ```
 
