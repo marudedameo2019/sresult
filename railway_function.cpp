@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#if __cplusplus < 202302L
+#if __cplusplus <= 202002L
 #define USE_SRESULT
 #endif
 #if defined(USE_SRESULT)
@@ -19,7 +19,7 @@ enum class localerror {
 };
 
 using namespace std;
-#if __cplusplus < 202302L
+#if defined(USE_SRESULT)
 using namespace sresult;
 #endif
 
