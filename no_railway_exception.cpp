@@ -42,20 +42,20 @@ int main() {
   try {
     auto r = sum(input_numbers(3));
     wcout << L"合計: " << r << endl;
-  } catch (localerror e) {
+  } catch (localerror& e) {
     wcout << wstring(L"エラー: ") + (e == localerror::read_error
                                          ? L"読み込みエラー!"
                                          : L"不明エラー")
           << endl;
-  } catch (invalid_argument) {
+  } catch (invalid_argument&) {
     wcout << (L"エラー: "
               L"不正な引数!")
           << endl;
-  } catch (out_of_range) {
+  } catch (out_of_range&) {
     wcout << (L"エラー: "
               L"範囲外!")
           << endl;
-  } catch (exception) {
+  } catch (exception&) {
     wcout << (L"エラー: "
               L"不明エラー")
           << endl;
